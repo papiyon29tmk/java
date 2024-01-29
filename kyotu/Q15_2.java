@@ -8,21 +8,16 @@ class Q15_2 {
 
         try {
             System.out.print("整数を入力 = ");
-            double inputNumber = scanner.nextDouble();
+            int number = scanner.nextInt(); // 整数を直接読み込む
 
-            // 入力が整数かどうか判定
-            if (inputNumber % 1 == 0) {
-                int number = (int) inputNumber;
-
-                // 偶数か奇数か判定して結果を表示
-                if (number % 2 == 0) {
-                    System.out.println(number + " は偶数");
-                } else {
-                    System.out.println(number + " は奇数");
-                }
+            // 偶数か奇数か判定して結果を表示
+            if (number % 2 == 0) { // 変数を使わずに判定
+                System.out.println(number + " は偶数");
             } else {
-                System.out.println("整数と認識できません！！");
+                System.out.println(number + " は奇数");
             }
+        } catch (NumberFormatException e) {
+            System.out.println("整数と認識できません！！");
         } catch (InputMismatchException e) {
             System.out.println("整数と認識できません！！");
         } finally {
