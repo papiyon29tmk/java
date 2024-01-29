@@ -5,7 +5,7 @@ class Q15_1 {
   public static void main(String[] args) {
     // Scannerクラスのオブジェクトを作成する
     Scanner sc = new Scanner(System.in);
-    // 2つの整数を入力してもらう
+    // 2つの整数を入力
     System.out.print("整数 1 = ");
     int num1 = sc.nextInt();
     System.out.print("整数 2 = ");
