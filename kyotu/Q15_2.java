@@ -11,7 +11,7 @@ class Q15_2 {
             int number = scanner.nextInt(); // 整数を直接読み込む
 
             // 偶数か奇数か判定して結果を表示
-            if (number % 2 == 0) { // 変数を使わずに判定
+            if (number % 2 == 0) {
                 System.out.println(number + " は偶数");
             } else {
                 System.out.println(number + " は奇数");
